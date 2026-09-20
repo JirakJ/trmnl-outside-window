@@ -4,7 +4,7 @@ Outdoor activity windows from a city weather forecast. A standalone, MIT-license
 local Python collector. This repository contains everything needed to run it;
 no other plugin repository or developer-operated service is required.
 
-[Download](https://github.com/JirakJ/trmnl-outside-window/releases/latest) · [Configuration](docs/CONFIGURATION.md) · [Scheduling](docs/RUNNING.md)
+[Download](https://github.com/JirakJ/trmnl-outside-window/releases/latest) · [Configuration](docs/CONFIGURATION.md) · [Scheduling](docs/RUNNING.md) · [Shared-screen layouts](docs/MASHUPS.md)
 
 ![Synthetic demo](docs/preview.png)
 
@@ -41,6 +41,12 @@ Then collect your data locally:
 The installed command `trmnl-outside-window` accepts the same options. Without `--push`, only
 local JSON is printed. `--demo` uses synthetic data and cannot be pushed. Normal
 source failures preserve the previous screen; always check its update timestamp.
+
+## Share the screen with other plugins
+
+Use Outside Window in a half-screen or quarter-screen [TRMNL Mashup](docs/MASHUPS.md).
+A quarter is useful for the best outdoor window and its weather. Use a vertical half for more forecast rows.
+The guide includes compatible layouts, suggested companion plugins and account setup.
 
 ## Development and verification
 
