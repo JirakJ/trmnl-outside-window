@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trmnl-outside-window"
+version = "0.1.0"
+description = "Outdoor activity windows from a city weather forecast"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["tzdata==2026.4"]
+
+[project.scripts]
+trmnl-outside-window = "trmnl_outside_window.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/JirakJ/trmnl-outside-window"
+Issues = "https://github.com/JirakJ/trmnl-outside-window/issues"
+
+[tool.setuptools.packages.find]
+include = ["trmnl_outside_window*"]

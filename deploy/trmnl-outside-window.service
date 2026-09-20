@@ -1,0 +1,16 @@
+[Unit]
+Description=Update Outside Window on TRMNL
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=trmnl
+WorkingDirectory=/opt/trmnl-outside-window
+EnvironmentFile=/opt/trmnl-outside-window/private/collector.env
+ExecStart=/opt/trmnl-outside-window/.venv/bin/python -m trmnl_outside_window --config private/config.json --push
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/trmnl-outside-window/private

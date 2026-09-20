@@ -1,0 +1,10 @@
+{
+  "name": "trmnl-outside-window",
+  "private": true,
+  "scripts": {
+    "check:layouts": "node scripts/check_layouts.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
